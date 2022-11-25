@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-2nitj^jlc5i5hlchc_b&6_6*)&ta9)+^%6x_#&244l!6h=c0__
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','websites-blocker3.herokuapp.com']
 
 # Application definition
 
@@ -129,7 +129,7 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 #HEROKU
-#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 # Default primary key field type

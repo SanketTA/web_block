@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebSiteBLocker</title>
-        <link rel="stylesheet" href="{% static './style.css' %}">
+        <link rel="stylesheet" href="{% static '/style.css' %}">
         <link rel="preconnect" href="{% static 'https://fonts.googleapis.com' %}">
     </head>
     <style>
         .cta{
             margin: 100px auto;
             width: 80%;
-            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url({% static './images/banner2.jpg' %});
+            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url({% static '/images/banner2.jpg' %});
             background-position: center;
             background-size: cover;
             border-radius: 10px;
@@ -28,7 +28,7 @@
 
     min-height: 100vh;
     width: 100%;
-    background: url({% static './images/Background.png' %});
+    background: url({% static '/images/Background.png' %});
 
     background-position: center;
     background-size: cover;
@@ -53,19 +53,19 @@
 <body>
     <section class="header">
         <nav>
-            <a href="index.html"><img class="img-div" src="{% static './images/Logoo.png' %}"></a>
+            <a href="index.html"><img class="img-div" src="{% static '/images/Logoo.png' %}"></a>
             <div class="nav-links">
                 <ul>
                     <li><a href="/">HOME</a></li>
-                    <li><a href="./About">ABOUT</a></li>
+                    <li><a href="/About">ABOUT</a></li>
                     {% if user.is_authenticated%}
-                    <li><a href="./logoutuser">LOGOUT</a></li>
-                    <li><a href="./options">OPTIONS</a></li>
+                    <li><a href="/logoutuser">LOGOUT</a></li>
+                    <li><a href="/options">OPTIONS</a></li>
                     {%else%}
-                    <li><a href="./Login">LOGIN</a></li>
-                    <li><a href="./register">SIGN UP</a></li>
+                    <li><a href="/Login">LOGIN</a></li>
+                    <li><a href="/register">SIGN UP</a></li>
                     {% endif %}
-                    <li><a href="./contact">CONTACT</a></li>
+                    <li><a href="/contact">CONTACT</a></li>
 
                 </ul>
             </div>
@@ -80,7 +80,7 @@
         <div class="text-box">
             <h1>WEBSITE BLOCKER</h1>
             <p>Web site blocker is a simple program which is used to block sites.<br> It is a program which is useful in  many corporate sectors, offices, schools.</p>
-            <a href="./register" class="hero-btn">SIGN UP NOW</a>
+            <a href="/register" class="hero-btn">SIGN UP NOW</a>
         </div>
     </section>
     <!-- <--------Course-------->
@@ -124,21 +124,21 @@
 
         <div class="row">
             <div class="campus-col">
-                <img src="{% static './images/Windows.jpg' %}">
+                <img src="{% static '/images/Windows.jpg' %}">
                 <div class="layer">
                     <h3>WINDOWS</h3>
                 </div>
             </div>
 
             <div class="campus-col">
-                <img src="{% static './images/Mac.png' %}">
+                <img src="{% static '/images/Mac.png' %}">
                 <div class="layer">
                     <h3>MAC</h3>
                 </div>
             </div>
 
             <div class="campus-col">
-                <img src="{% static './images/Ubuntu.png' %}">
+                <img src="{% static '/images/Ubuntu.png' %}">
                 <div class="layer">
                     <h3>UBUNTU</h3>
                 </div>
@@ -156,19 +156,19 @@
 
 <div class="class row">
     <div class="facilities-col">
-        <img src="{% static './images/SCHOOL.png' %}">
+        <img src="{% static '/images/SCHOOL.png' %}">
         <h3>IN SCHOOLS & COLLEGES</h3>
         <p>You can use this to block the sites which you don't want to used by the student in the schools & colleges.</p>
     </div>
 
     <div class="facilities-col">
-        <img src="{% static './images/INDUSTRIES.png' %}">
+        <img src="{% static '/images/INDUSTRIES.png' %}">
         <h3>INDUSTRIES</h3>
         <p>You can block the sites in your Industries which you don't want to be used by your Employes</p>
     </div>
 
     <div class="facilities-col">
-        <img src="{% static './images/HOME.png' %}">
+        <img src="{% static '/images/HOME.png' %}">
         <h3>Home</h3>
         <p>You can block many sites at home or for the system which is used by your little ones.</p>
     </div>
@@ -184,7 +184,7 @@
 
         <div class="row">
             <div class="testimonials-col">
-                <img src="{% static './images/Shashank.png' %}">
+                <img src="{% static '/images/Shashank.png' %}">
                 <div>
                 
                     <h3>Shashank Ahire</h3><h6>(Frontend Developer)</h6>
@@ -192,14 +192,14 @@
             </div>
 
             <div class="testimonials-col">
-                <img src="{% static './images/Sanket.png' %}">
+                <img src="{% static '/images/Sanket.png' %}">
                 <div>
                     <p></p>
                     <h3>Sanket Aghav</h3> <h6>Backend Developer</h6>
                 </div>
             </div>
             <div class="testimonials-col">
-                <img src="{% static './images/Vikas.jpeg' %}">
+                <img src="{% static '/images/Vikas.jpeg' %}">
                 <div>
                     <p></p>
                     <h3>Vikas Bankar</h3> <h6>Database Analysist</h6>
@@ -213,7 +213,7 @@
 
         <section class="cta" id="iop">
             <h1>Enroll Now <br> Any where from world</h1>
-            <a href="./contact" class="hero-btn">CONTACT US</a>
+            <a href="/contact" class="hero-btn">CONTACT US</a>
 
 
         </section>
