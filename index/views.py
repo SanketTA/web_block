@@ -5,10 +5,10 @@ from django.contrib.auth import authenticate, login, logout as auth_logout
 from django.shortcuts import redirect, render
 from django.http import HttpResponse, HttpResponseRedirect
 from datetime import datetime
-from home.models import Blocks
+from index.models import Blocks
 from .models import Blocks
 from .models import Unblocks
-from home.models import Unblocks
+from index.models import Unblocks
 from django.contrib.auth.models import User
 
 #For Bloking
@@ -18,7 +18,7 @@ websites = []
 
 
 def index(request):
-    return render(request , 'home.html')
+    return render(request , 'index.html')
 
 def About(request):
     return render(request , 'About.html')
